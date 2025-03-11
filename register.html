@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carbon Diary - Register</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="registerStyles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a style="text-decoration: none;" href="landingPage.html">
+            <h1 class="logo" >CARBON 
+                DIARY</h1>
+            </a>
+            <nav class="nav-links"> 
+            <a href="landingPage.html" class="nav-item ">Home</a>
+            <a href="#" class="nav-item ">About</a>
+            <a href="#" class="nav-item ">Panduan</a>
+            <a href="#" class="nav-item ">Kontak</a>
+            </nav>
+            <div class="auth-buttons">
+            <a href="login.html">
+                <button class="login-btn">Login</button>
+            </a>
+            <a href="register.html" class="signup-link">Sign Up</a>
+            </div>
+        </header>
+        
+        <main class="main-content">
+        <h2 class="page-title">Daftar</h2>
+        
+        <section class="registration-container">
+            <div class="registration-content">
+            <div class="social-login">
+                <h3 class="section-title">Daftar Melalui</h3>
+                <button class="google-login">
+                Login dengan
+                <img
+                src="flat-color-icons--google.png"
+                class="google-logo"
+                />  Google
+                </button>
+            </div>
+        
+            <div class="form-section">
+                <h3 class="section-title">Atau</h3>
+                <form class="registration-form">
+                <input type="text" class="form-input" placeholder="Nama Lengkap" />
+                <input type="email" class="form-input" placeholder="Email" />
+                <input type="password" class="form-input" placeholder="Password" />
+                <input
+                    type="password"
+                    class="form-input"
+                    placeholder="Ulangi Password"
+                />
+        
+                <div class="gender-selection">
+                    <label class="gender-label">Jenis Kelamin</label>
+                    <div class="gender-options">
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="male" />
+                        <span class="radio-label">Pria</span>
+                    </label>
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="female" />
+                        <span class="radio-label">Wanita</span>
+                    </label>
+                    </div>
+                </div>
+        
+                <input type="tel" class="form-input" placeholder="Nomor Telepon" />
+                <input type="text" class="form-input" placeholder="Kota" />
+        
+                <label class="terms-checkbox">
+                    <input type="checkbox" />
+                    <span class="terms-text">Setujui syarat dan ketentuan</span>
+                </label>
+        
+                <button type="submit" class="submit-btn">Daftar</button>
+        
+                <div class="login-prompt">
+                    <span>Sudah memiliki akun?</span>
+                    <a href="login.html" class="login-link">Login</a>
+                </div>
+                </form>
+            </div>
+            </div>
+        </section>
+        
+        </main>
+
+        <footer class="footer">
+            <h2>Tentang Kami</h2>
+        </footer>
+    </body>
+</html>
+
+

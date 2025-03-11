@@ -13,25 +13,30 @@
   <body>
     <div class="container">
         
+    <!-- Header Navabar -->
       <header class="header">
-        <h1 class="logo">CARBON 
-          DIARY</h1>
+        <a style="text-decoration: none;" href="landingPage.html">
+          <h1 class="logo" >CARBON 
+            DIARY</h1>
+        </a>
         <nav class="nav-links">
-          <a href="#" class="nav-item">Home</a>
-          <a href="#" class="nav-item">Calculator</a>
-          <a href="#" class="nav-item">About</a>
-          <a href="#" class="nav-item">Panduan</a>
-          <a href="#" class="nav-item">Kontak</a>
+          <a href="landingPage.html" class="nav-item ">Home</a>
+          <a href="#" class="nav-item ">About</a>
+          <a href="#" class="nav-item ">Panduan</a>
+          <a href="#" class="nav-item ">Kontak</a>
         </nav>
         <div class="auth-buttons">
-          <button class="login-btn">Login</button>
-          <a href="#" class="signup-link">Sign Up</a>
+          <a href="login.html">
+            <button class="login-btn">Login</button>
+          </a>
+          <a href="register.html" class="signup-link">Sign Up</a>
         </div>
-      </header>
+    </header>
 
       <main class="main-content">
+        <h2 class="login-title">Masuk</h2>
+
         <section class="login-container">
-          <h2 class="login-title">Masuk</h2>
           <form class="login-form" id="loginForm">
             <div class="form-group">
               <label for="email" class="label">Email</label>
@@ -52,7 +57,7 @@
         </section>
       </main>
     </div>
-    <script src="dist/main.js"></script>
+    <script src="/main.js"></script>
 
     <footer class="footer">
       <h2>Tentang Kami</h2>

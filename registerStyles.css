@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 154px;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  
+  .nav-container {
+    width: 100%;
+    height: 154px;
+    background-color: #fff;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    color: #006769;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: pre-line;
+    line-height: 0.9;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .nav-item {
+    color: #006769;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .login-btn {
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #006769;
+    border: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .signup-link {
+    color: #006769;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #006769;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    padding-bottom: 40px;
+  }
+  
+  .page-title {
+    color: #006769;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 40px;
+  }
+  
+  .registration-container {
+    width: 630px;
+    background: linear-gradient(
+      180deg,
+      #0067694f 0%,
+      rgba(109, 160, 161, 0.16) 75.32%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    border-radius: 42px;
+    /* border: 1px solid #006769; */
+    padding: 40px;
+  }
+  
+  .registration-content {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .social-login,
+  .form-section {
+    flex: 1;
+  }
+  
+  .section-title {
+    color: #006769;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-input {
+    color: #b9b2b2;
+    font-size: 13px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #bbb8b8;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .gender-selection {
+    margin-top: 12px;
+  }
+  
+  .gender-label {
+    color: #000;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .gender-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .radio-circle {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #bbb8b8;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .radio-label {
+    color: #000;
+    font-size: 13px;
+  }
+  
+  .terms-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+  
+  .checkbox-custom {
+    width: 19px;
+    height: 18px;
+    border: 1px solid rgba(0, 103, 105, 0.5);
+    background-color: #fff;
+  }
+  
+  .terms-text {
+    color: #006769;
+    font-size: 13px;
+  }
+  
+  .submit-btn {
+    color: #fff;
+    font-size: 13px;
+    background-color: #006769;
+    border-radius: 20px;
+    padding: 12px 24px;
+    border: none;
+    margin: 16px auto 0;
+    cursor: pointer;
+  }
+  
+  .login-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    font-size: 13px;
+  }
+  
+  .login-prompt span {
+    color: #000;
+  }
+  
+  .login-link {
+    color: #006769;
+    text-decoration: none;
+  }
+
+  .google-login {
+    background-color: #3784ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 250px;
+    transition: background-color 0.3s ease; 
+  }
+
+  .google-logo {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+  }
+  
+  .footer {
+    padding: 22px 24px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 55px;
+    height: 212px;
+    background-color: #006769;
+    position: relative;
+  }
+
+  @media (max-width: 991px) {
+    .nav-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .main-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .registration-container {
+      width: 100%;
+    }
+  
+    .registration-content {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .nav-container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    .main-content {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  
