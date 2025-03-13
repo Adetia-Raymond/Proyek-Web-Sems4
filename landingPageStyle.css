@@ -75,6 +75,8 @@
     display: flex;
     justify-content: space-between;
     background-color: #fff;
+    animation: float 2s ease-in-out forwards;
+
   }
   
   .hero-content {
@@ -160,6 +162,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  .intro-container {
+    display: flex;
+  }
   
   .tips-section {
     padding: 100px 40px;
@@ -178,16 +184,36 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
   }
+
   
   .tip-image {
     width: 100%;
     height: 142px;
     background-color: #d9d9d9;
+    /* Set the background image */
+    background-image: url('your-image-url.jpg');
+    
+    /* Control background image positioning */
+    background-position: center center; /* Center the image */
+    
+    /* Ensure the image covers the container */
+    background-size: cover; /* Crop the image to fill the container */
+    
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat;
   }
   
-  .tip-content {
+  .tip-card .tip-content {
     padding: 20px 34px;
+    flex-grow: 1;           /* Let content take up available space */
+    overflow-y: auto    ;       /* Allow vertical scrolling if content overflows */
+    /* padding: 20px;          Padding for spacing inside the card */
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: flex-start; /* Align content to the top */
   }
   
   .tip-title {
@@ -261,6 +287,10 @@
 
   
   @media (max-width: 991px) {
+    .img-a{
+      width: 100%;
+    }
+
     .header {
       padding: 0 20px;
     }
@@ -328,7 +358,7 @@
     }
 
     .header {
-      padding: 20px;
+      padding: 13px;
       height: auto;
       flex-wrap: wrap;
     }
@@ -339,6 +369,7 @@
   
     .auth-buttons {
       margin-left: auto;
+      gap: 10px;
     }
   
     .impact-card {
@@ -353,3 +384,24 @@
       width: 100%;
     }
   }
+
+
+  /* Floating animation */
+@keyframes float {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Start below the screen */
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px); /* Float upwards */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Set the final position */
+  }
+}
+
+.hero-image {
+  animation: float 2s ease-in-out forwards;
+}
